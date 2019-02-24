@@ -8,7 +8,6 @@ body
 #canvas
 {
     position: absolute;
-    background: blue;
 }
 
 #background
@@ -21,7 +20,7 @@ nav
     overflow: hidden;
 }
 .navbar {
-   background: rgb(0,0,0,0);
+       background: red;
 }
 .nav-link
 {
