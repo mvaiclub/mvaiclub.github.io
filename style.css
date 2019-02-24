@@ -8,6 +8,7 @@ body
 #canvas
 {
     position: absolute;
+    background: blue;
 }
 
 #background
