@@ -20,7 +20,7 @@ nav
     overflow: hidden;
 }
 .navbar {
-       background: red;
+       background: rgb(0,0,0,0);
 }
 .nav-link
 {
