@@ -3,7 +3,7 @@ html{
 }
 body
 {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
 }
 #canvas
 {
@@ -19,8 +19,13 @@ nav
 {
     overflow: hidden;
 }
+
+.hidden
+{
+    opacity: 0;
+}
 .navbar {
-       background: rgb(0,0,0,0);
+   background: rgb(0,0,0,0);
 }
 .nav-link
 {
@@ -56,14 +61,23 @@ nav
 
 }
 
-#tictactoeimg
+#interestslides
 {
-    
-    width: 50%;
-    height: 50%;
+    margin-left: 15%;
+
+}
+
+#quote
+{
+    margin-top: 10%;
+    color: rgb(0, 139, 242);
+}
+
+#tictactoeimg
+{   
     align-self: center;
     float: left;
-    margin: 0 0 3% 45%;
+    margin: 0 0 3% 30%;
 }
 .titleHR
 {
@@ -73,6 +87,13 @@ nav
     border-width: 3px;
     margin-left: 10%;
 
+}
+
+.lessonSubtitle
+{
+    text-align: center;
+    color: gray;
+    margin-bottom: 3%;
 }
 #arrowdown
 {
@@ -95,7 +116,7 @@ nav
 {
     text-align: center;
     font-size: 36pt;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
 }
 
 #email
