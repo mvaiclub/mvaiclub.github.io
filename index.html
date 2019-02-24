@@ -12,10 +12,13 @@
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
+        <canvas id = "canvas">
+
+            </canvas>
 <div id = "background">
  <nav class="navbar navbar-expand-lg navbar-light" id = "navbar">
 
- 
+  
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon" style = "color: white"></span>
@@ -24,10 +27,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="">Lessons</a>
+        <a class="nav-link" href="#lessons">Lessons</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="">Contact Us</a>
+        <a class="nav-link" href="#contactus">Contact Us</a>
       </li>
     </ul>
     
@@ -40,7 +43,7 @@
   <div id = arrowdown class = "hidden"><i class="fas fa-arrow-down"></i></div>
 </div>
 <div>
-    <h1 id = "lessonsTitle">Lessons</h1>
+    <h1 id = "lessons" class = "title">Lessons</h1>
     <hr class = "titleHR">
     <h3 class = "lessonHeader">Tic-Tac-Toe</h3>
     <div class = "col-lg-6 col-md-6 col-sm-12">
@@ -61,50 +64,32 @@
        
     </div>
 </div>
-<!--
-  <div width = "100%" height = "100%">
-     <img src="wwtwo.png"  width = "500px" style = "margin: 5% 5%; float: right;" class = "hidden">
-     <div style = "float: left; display: inline-block; width: 100%; height: 100%;"> 
-      <h1 id = "who" class = "hidden"> <strong>What is MV History Bowl?</strong></h1>
-      <hr id = "hrone" class = "hidden">
-       <h3 id = "info" class = "hidden" > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </h3>
-       <a id = "details"  class = "hidden" href = "information.html"> More Details <i  style = "font-size: 18pt;"class = "fas fa-arrow-right"></i></a> 
-     </div>
-      
-       <img src="wwtwo.png"  width = "500px" style = "margin: 5% 5%; float: left;" class = "hidden">
-      <div style = "margin: 5% 0 0 50%">
-       <h1 id = "who" class = "hidden"> <strong>Our Mission</strong></h1>
-      <hr id = "hrone" style = "" class = "hidden">
-       <h3 id = "info" style = "width: 85%" class = "hidden" style = "float: left;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </h3>
-     </div>
-       
 
-       
-        <h1 id = "contact" class = "hidden"> <strong>Contact Us</strong></h1>
-        <hr id = "hrtwo" class = "hidden">
-        <h3 id = "send" class = "hidden">Send Us A Message</h3>
+
+<div style = "margin-top: 30%">
+        <h1 id = "contactus" class = "title">Contact Us</h1>
+        <hr class = "titleHR">
         <form style = "width: 70%; float:left;" action="https://formspree.io/mvaiclub@gmail.com"
       method="POST">
       
             <div style = "overflow: hidden; margin: 0 0 1% 0; ">
               <div style = "float: left; margin-left: 10.25%; width: 40%;">
-                <h5 class = "hidden formtext" style="margin-bottom: 1%">Name:</h5>
-                <input type = "text" name = "name" id = "name" class = "hidden">
+                <h5 class = "formtext" style="margin-bottom: 1%">Name:</h5>
+                <input type = "text" name = "name" id = "name">
                </div>
                 
                <div style = "float: left; width: 40%;">
-                 <h5 class = "hidden formtext" style="margin-bottom: 1%">Email:</h5>
-                <input type = "text" name = "_replyto" id = "emailaddress" class = "hidden">
+                 <h5 class = "formtext" style="margin-bottom: 1%">Email:</h5>
+                <input type = "text" name = "_replyto" id = "emailaddress" >
               </div>
             </div>
-                 <h5 class = "hidden formtext" style = "margin: 0 0 1% 14.25%">Your message:</h5>
-                <textarea name = "message" id = "message" class = "hidden" > </textarea><br>
-                <input  id = "submit" type="submit" value="Send" class = "hidden">
+                 <h5 class = "formtext" style = "margin: 0 0 1% 14.25%">Your message:</h5>
+                <textarea name = "message" id = "message"> </textarea><br>
+                <input  id = "submit" type="submit" value="Send">
         </form>
-        <img width="25%" height = "250px" src = "logo.png">
-          <h3 id = "email" class = "hidden"> Or Email Us: mvaiclub@gmail.com </h3>
+          <h3 id = "email"> Or Email Us: mvaiclub@gmail.com </h3>
   </div>
-  
+
 
 <footer>
   <div style = "padding: 10px;">
@@ -112,7 +97,7 @@
     <p style="text-align: right;"> &copy; MVAI 2019</p>
 </div>
 </footer>
--->
+
  <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -121,26 +106,113 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
    <script type="text/javascript">
 
-  $(window).scroll(function() {
-    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $(".hidden").each(function() {
-      /* Check the location of each desired element */
-      var objectBottom = $(this).offset().top + $(this).outerHeight();
-      
-      /* If the element is completely within bounds of the window, fade it in */
-      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-        if ($(this).css("opacity")==0) {$(this).fadeTo(1000,1);}
-      } 
-    });
-  }) //invoke scroll-handler on page-load
-
-
-
      $(document).ready(function() {
             $("#title").fadeTo(1000,1).removeClass("hidden");
           setTimeout( function() {  $("#arrowdown").fadeTo(1000,1).removeClass("hidden"); }, 500); 
-          
-            
+
+    var canvas = document.getElementById("canvas"),
+    ctx = canvas.getContext('2d');
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+var stars = [], // Array that contains the stars
+    FPS = 60, // Frames per second
+    x = 200, // Number of stars
+    mouse = {
+      x: 0,
+      y: 0
+    };  // mouse location
+
+// Push stars to array
+
+for (var i = 0; i < x; i++) {
+  stars.push({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    radius: Math.random() * 2 + 1,
+    vx: Math.floor(Math.random() * 75) - 25,
+    vy: Math.floor(Math.random() * 75) - 25
+  });
+}
+
+// Draw the scene
+
+function draw() {
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  
+  ctx.globalCompositeOperation = "lighter";
+  
+  for (var i = 0, x = stars.length; i < x; i++) {
+    var s = stars[i];
+  
+    ctx.fillStyle = "#fff";
+    ctx.beginPath();
+    ctx.arc(s.x, s.y, s.radius, 0, 2 * Math.PI);
+    ctx.fill();
+    ctx.fillStyle = 'black';
+    ctx.stroke();
+  }
+  
+  ctx.beginPath();
+  for (var i = 0, x = stars.length; i < x; i++) {
+    var starI = stars[i];
+    ctx.moveTo(starI.x,starI.y); 
+    if(distance(mouse, starI) < 150) ctx.lineTo(mouse.x, mouse.y);
+    for (var j = 0, x = stars.length; j < x; j++) {
+      var starII = stars[j];
+      if(distance(starI, starII) < 150) {
+        //ctx.globalAlpha = (1 / 150 * distance(starI, starII).toFixed(1));
+        ctx.lineTo(starII.x,starII.y); 
+      }
+    }
+  }
+  ctx.lineWidth = 0.05;
+  ctx.strokeStyle = 'white';
+  ctx.stroke();
+}
+
+function distance( point1, point2 ){
+  var xs = 0;
+  var ys = 0;
+ 
+  xs = point2.x - point1.x;
+  xs = xs * xs;
+ 
+  ys = point2.y - point1.y;
+  ys = ys * ys;
+ 
+  return Math.sqrt( xs + ys );
+}
+
+// Update star locations
+
+function update() {
+  for (var i = 0, x = stars.length; i < x; i++) {
+    var s = stars[i];
+  
+    s.x += s.vx / FPS;
+    s.y += s.vy / FPS;
+    
+    if (s.x < 0 || s.x > canvas.width) s.vx = -s.vx;
+    if (s.y < 0 || s.y > canvas.height) s.vy = -s.vy;
+  }
+}
+
+canvas.addEventListener('mousemove', function(e){
+  mouse.x = e.clientX;
+  mouse.y = e.clientY;
+});
+
+// Update and draw
+
+function tick() {
+  draw();
+  update();
+  requestAnimationFrame(tick);
+}
+
+tick();    
     });
    </script>
     
