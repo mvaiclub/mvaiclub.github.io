@@ -78,7 +78,7 @@ nav
     color: rgb(0, 139, 242);
 }
 
-#tictactoeimg
+.presentation
 {   
     align-self: center;
     float: left;
