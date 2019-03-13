@@ -51,7 +51,7 @@
 <hr class = "titleHR">
 
 <div class = "col-md-6 col-sm-12" style = "float: left">
-    <div style = "margin-left: 25%">
+    <div id = "aboutText"  style = "margin-left: 25%">
         <h1 id = "quote">"The Future of Technology"</h1>
         <h4 id = "aboutText">Our goal is to not only teach Artificial Intelligence, 
           but code everything from basic algorithms to maching learning. 
@@ -70,7 +70,7 @@
     <h3 class = "lessonHeader">Tic-Tac-Toe</h3>
     <h4 class = "lessonSubtitle">Feburary 28, 2019</h4>
     <div class = "col-lg-6 col-md-6 col-sm-12">
-        <iframe class = "presentation" src="https://docs.google.com/presentation/d/e/2PACX-1vRoetYsw60iOYfgeRsO4vijai0qqYsoItZE7K6ElmuFaZbHdq_6pkTky89wj7l82eWvRHqhw26nATOb/embed?start=false&loop=false&delayms=60000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <iframe class = "presentation" id = "ttt" src="https://docs.google.com/presentation/d/e/2PACX-1vRoetYsw60iOYfgeRsO4vijai0qqYsoItZE7K6ElmuFaZbHdq_6pkTky89wj7l82eWvRHqhw26nATOb/embed?start=false&loop=false&delayms=60000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     </div>
     <div style = "float: left; "class = "col-lg-6 col-md-6 ">
         <h4 class = "slidesTitle"> Download Code</h4>
@@ -91,7 +91,7 @@
     <h3 class = "lessonHeader" style = " margin-top: 25%">Chess</h3>
     <h4 class = "lessonSubtitle">March 14, 2019</h4>
     <div class = "col-lg-6 col-md-6 col-sm-12">
-        <iframe class = "presentation" src="https://docs.google.com/presentation/d/e/2PACX-1vSPhtjVqsi82SP0huRbSZRtRL7CAOYSHcR_46-E5_4WgAodIpM0NvbkN5Q2qHeoxH696j-acK5rVLAT/embed?start=false&loop=false&delayms=60000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <iframe class = "presentation" id = "chess" src="https://docs.google.com/presentation/d/e/2PACX-1vSPhtjVqsi82SP0huRbSZRtRL7CAOYSHcR_46-E5_4WgAodIpM0NvbkN5Q2qHeoxH696j-acK5rVLAT/embed?start=false&loop=false&delayms=60000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     </div>
 
     <div style = "float: left; "class = "col-lg-6 col-md-6 ">
@@ -161,13 +161,46 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
    <script type="text/javascript">
+   var canvas;
+    if($(document).width() < 1000)
+    {
+        $("#title").css("font-size", "40pt");
+        $(".title").css("font-size", "40pt");
+        $("#quote").css("font-size", "25pt");
+        $("#aboutText").css("margin", "0");
+        $("#aboutText").css("text-align", "center");
+        $("#interestslides").attr("width", "300");
+        $("#interestslides").attr("height", "255"); 
+        $("#interestslides").css("margin", "10%");
+        $(".lessonHeader").css("font-size", "25pt");  
+        $("#ttt").attr("width", "300");
+        $("#ttt").attr("height", "200");
+        $("#chess").attr("width", "300");
+        $("#chess").attr("height", "200");
+        $("#ethicsSlides").attr("width", "300");
+        $("#ethicsSlides").attr("height", "200");
+        $("#ethicsSlides").css("margin", "10%");
+        $(".presentation").css("margin","10%");
+
+    }
+
+ var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
      $(document).ready(function() {
             $("#title").fadeTo(1000,1).removeClass("hidden");
           setTimeout( function() {  $("#arrowdown").fadeTo(1000,1).removeClass("hidden"); }, 500); 
-
-    var canvas = document.getElementById("canvas"),
-    ctx = canvas.getContext('2d');
+      
+    if($(document).width() > 1000 && !is_safari)
+    {
+      canvas = document.getElementById("canvas"),
+      ctx = canvas.getContext('2d');
+      
+    }
+    if(is_safari)
+    {
+      $(".navbar").css("background", "rgb(0, 139, 242)");
+    }
+    
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
