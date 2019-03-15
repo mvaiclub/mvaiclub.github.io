@@ -64,13 +64,13 @@
     <iframe id = "interestslides"  src="https://docs.google.com/presentation/d/e/2PACX-1vSB9PawSesZ12eo7l_qdOdqXUcsODQB1O5nxCH5FiTgIqkcfiGxvjtd1fcGvuQXC9wr7ESyR9W8HElf/embed?start=false&loop=false&delayms=30000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
-<div>
+
     <h1 id = "lessons" class = "title">Lessons</h1>
     <hr class = "titleHR">
     <h3 class = "lessonHeader">Tic-Tac-Toe</h3>
     <h4 class = "lessonSubtitle">Feburary 28, 2019</h4>
     <div class = "col-lg-6 col-md-6 col-sm-12">
-        <iframe class = "presentation" id = "ttt" src="https://docs.google.com/presentation/d/e/2PACX-1vRoetYsw60iOYfgeRsO4vijai0qqYsoItZE7K6ElmuFaZbHdq_6pkTky89wj7l82eWvRHqhw26nATOb/embed?start=false&loop=false&delayms=60000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <iframe class = "presentation" id = "ttt" src="https://docs.google.com/presentation/d/e/2PACX-1vRoetYsw60iOYfgeRsO4vijai0qqYsoItZE7K6ElmuFaZbHdq_6pkTky89wj7l82eWvRHqhw26nATOb/embed?start=false&loop=false&delayms=60000" frameborder="0" width="70%" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     </div>
     <div style = "float: left; "class = "col-lg-6 col-md-6 ">
         <h4 class = "slidesTitle"> Download Code</h4>
@@ -88,10 +88,10 @@
         
        
     </div>
-    <h3 class = "lessonHeader" style = " margin-top: 25%">Chess (Part 1)</h3>
+    <h3 class = "lessonHeader" style = " margin-top: 30%">Chess (Part 1)</h3>
     <h4 class = "lessonSubtitle">March 14, 2019</h4>
     <div class = "col-lg-6 col-md-6 col-sm-12">
-        <iframe class = "presentation" id = "chess" src="https://docs.google.com/presentation/d/e/2PACX-1vSPhtjVqsi82SP0huRbSZRtRL7CAOYSHcR_46-E5_4WgAodIpM0NvbkN5Q2qHeoxH696j-acK5rVLAT/embed?start=false&loop=false&delayms=60000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <iframe class = "presentation" id = "chess" src="https://docs.google.com/presentation/d/e/2PACX-1vSPhtjVqsi82SP0huRbSZRtRL7CAOYSHcR_46-E5_4WgAodIpM0NvbkN5Q2qHeoxH696j-acK5rVLAT/embed?start=false&loop=false&delayms=60000" frameborder="0" width="70%" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     </div>
 
     <div style = "float: left; "class = "col-lg-6 col-md-6 ">
@@ -116,12 +116,12 @@
       <iframe id = "ethicsSlides" src="https://docs.google.com/presentation/d/e/2PACX-1vTZuk3Yp3oscFbd4TIkWJ_A_DM0Zk3XJUhADUFJKLVdqhsnkwh3l0s0EBPSyAMJbN79bEPA1X74B_iW/embed?start=false&loop=false&delayms=60000" frameborder="0" width="480" height="284" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>    </div>
     </div>-->
 
-</div>
 
 
 
 
-<div style = "margin-top: 25%">
+
+<div style = "margin-top: 30%">
         <h1 id = "contactus" class = "title">Contact Us</h1>
         <hr class = "titleHR">
         <form style = "width: 70%; float:left;" action="https://formspree.io/mvaiclub@gmail.com"
@@ -180,11 +180,8 @@
         $("#ethicsSlides").attr("height", "200");
         $("#ethicsSlides").css("margin", "10%");
         $(".presentation").css("margin","10%");
-
     }
-
  var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
      $(document).ready(function() {
             $("#title").fadeTo(1000,1).removeClass("hidden");
           setTimeout( function() {  $("#arrowdown").fadeTo(1000,1).removeClass("hidden"); }, 500); 
@@ -200,10 +197,8 @@
       $(".navbar").css("background", "rgb(0, 139, 242)");
     }
     
-
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-
 var stars = [], // Array that contains the stars
     FPS = 60, // Frames per second
     x = 200, // Number of stars
@@ -211,9 +206,7 @@ var stars = [], // Array that contains the stars
       x: 0,
       y: 0
     };  // mouse location
-
 // Push stars to array
-
 for (var i = 0; i < x; i++) {
   stars.push({
     x: Math.random() * canvas.width,
@@ -223,9 +216,7 @@ for (var i = 0; i < x; i++) {
     vy: Math.floor(Math.random() * 75) - 25
   });
 }
-
 // Draw the scene
-
 function draw() {
   ctx.clearRect(0,0,canvas.width,canvas.height);
   
@@ -259,7 +250,6 @@ function draw() {
   ctx.strokeStyle = 'white';
   ctx.stroke();
 }
-
 function distance( point1, point2 ){
   var xs = 0;
   var ys = 0;
@@ -272,9 +262,7 @@ function distance( point1, point2 ){
  
   return Math.sqrt( xs + ys );
 }
-
 // Update star locations
-
 function update() {
   for (var i = 0, x = stars.length; i < x; i++) {
     var s = stars[i];
@@ -286,20 +274,16 @@ function update() {
     if (s.y < 0 || s.y > canvas.height) s.vy = -s.vy;
   }
 }
-
 canvas.addEventListener('mousemove', function(e){
   mouse.x = e.clientX;
   mouse.y = e.clientY;
 });
-
 // Update and draw
-
 function tick() {
   draw();
   update();
   requestAnimationFrame(tick);
 }
-
 tick();    
     });
    </script>
