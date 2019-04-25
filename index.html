@@ -42,8 +42,8 @@
 
 </nav>
 
-
-  <h1 id = "title" class = "hidden" ><strong>Monta Vista Artificial Intelligence</strong></h1>
+  <img id = "brain" src = "brain.png" class = "hidden" width = 15% style="margin: 5% 42.5% 0 42.5%">
+  <h1 id = "title" class = "hidden" style = "margin-top: 2.5%" ><strong>Monta Vista Artificial Intelligence</strong></h1>
   <div id = arrowdown class = "hidden"><i class="fas fa-arrow-down"></i></div>
 </div>
 
@@ -231,8 +231,11 @@
     }
  var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
      $(document).ready(function() {
-            $("#title").fadeTo(1000,1).removeClass("hidden");
-          setTimeout( function() {  $("#arrowdown").fadeTo(1000,1).removeClass("hidden"); }, 500); 
+      $("#brain").fadeTo(1000,1).removeClass("hidden");
+      setTimeout( function() {  $("#title").fadeTo(1000,1).removeClass("hidden"); }, 500); 
+            
+          setTimeout( function() {  $("#arrowdown").fadeTo(1000,1).removeClass("hidden"); }, 1000); 
+          
       
     if($(document).width() > 1000 && !is_safari)
     {
