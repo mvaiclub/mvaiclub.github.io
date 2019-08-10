@@ -233,16 +233,31 @@ background: lightgray;
 
 #submit:focus {outline:0;}
 
+.teamName
+{
+    margin-top: 2%;
+    text-align: center;
+}
+.teamImg
+{
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
 nav
 {
     background: gray;
 }
 
+.teamPos
+{
+    text-align: center;
+    color: gray;
+
+}
 
 footer
 {
     background: rgb(248, 249, 250);
 }
-
-
-
