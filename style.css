@@ -1,18 +1,29 @@
 html{
     scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 body
 {
     font-family: 'Roboto Slab', sans-serif;
+    background: rgb(0,139,242);
+    color:white;
 }
 #canvas
 {
     position: absolute;
+    width:100%;
+}
+
+.col-md-6
+{
+  padding: 0;
 }
 
 #background
 {
-    padding-bottom: 15%;
+    padding-bottom: 2%;
     background: rgb(0,139,242);
 }
 
@@ -61,7 +72,7 @@ nav
 {
     color:white;
     text-align: center;
-   margin: 15% 0 10% 0;
+   margin: 15% 0 5% 0;
     font-size: 50pt;
 
 }
@@ -72,32 +83,54 @@ nav
 
 }
 
+#demo
+{
+  width: 80%;
+  margin-left: 10%;
+}
+
 #quote
 {
     margin-top: 10%;
-    color: rgb(0, 139, 242);
+    color: white;
 }
 
 .presentation
-{   
+{
     align-self: center;
     float: left;
-    margin: 0 0 3% 30%;
+    margin: 0 30% 3% 30%;
 }
 .titleHR
 {
-    border-color: rgb(0, 139, 242);
+    border-color: white;
     width: 10%;
     font-size: 50pt;
     border-width: 3px;
-    margin-left: 10%;
+    margin-left: 45%;
 
 }
+
+#aboutText
+{
+  text-align:left;
+  width: 60%;
+  align-self: center;
+
+  margin-top: 5%;
+}
+
+#aboutPoints
+{
+  margin-top: 6%;
+  margin-left: 40%;
+}
+
 
 .lessonSubtitle
 {
     text-align: center;
-    color: gray;
+    color: white;
     margin-bottom: 3%;
 }
 #arrowdown
@@ -113,21 +146,21 @@ nav
 .title
 {
     font-size: 50pt;
-    color: rgb(0, 139, 242);
-    margin: 5% 0 0.5% 10%;
+    color: white;
+    margin: 150px 0 0.5% 0;
+    text-align:center;
 }
 
 .lessonHeader
 {
     text-align: center;
     font-size: 36pt;
-    margin-bottom: 1%;
+    margin-bottom: 5px;
 }
 
 #email
 {
-    margin: 0 0 2% 10%;
-    width: 60%;
+    width: 100%;
 }
 
 
@@ -188,7 +221,7 @@ width:80%;
     border-radius: 10px;
     height: 150px;
     width: 72%;
-    border: 1px solid lightgray; 
+    border: 1px solid lightgray;
 }
 
 #message:focus
@@ -200,7 +233,7 @@ width:80%;
 
 .circle
 {
-    
+
 border-radius: 50%;
 width: 80%;
 height: auto;
@@ -216,19 +249,19 @@ background: lightgray;
 
 .formtext
 {
-   margin: 0 0 0 10%; 
+   margin: 0 0 0 10%;
 
 }
 
 #submit
 {
-    margin: 0 0 2% 14.25%;
+    margin: 0 0 2% 40%;
     font-size: 20pt;
     border-radius: 10px;
-   
+    width: 20%;
     padding: 0.5% 2%;
-    background: rgb(0, 139, 242);
-    color: white;
+    background: white;
+    color: rgb(0,139, 242);
 }
 
 #submit:focus {outline:0;}
@@ -253,11 +286,27 @@ nav
 .teamPos
 {
     text-align: center;
-    color: gray;
+    color: white;
 
+}
+
+.aboutpoint
+{
+  list-style-type: none;
+  position: relative;
+  padding-left: 15px;
+  margin: 20px;
+}
+
+.aboutpoint:before {
+  content: "\25BA \0020";
+  font-size: 15px;
+  position: absolute;
+  top: 5px;
+  left: -10px;
 }
 
 footer
 {
-    background: rgb(248, 249, 250);
+    background: rgb(0, 139, 242);
 }
