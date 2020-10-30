@@ -1,119 +1,143 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>MVAI Club</title>
-	<!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="shortcut icon" type="image/x-icon" href="logoico.png" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">	<link rel="stylesheet" type="text/css" href="style.css">
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>MVAI Club</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" type="image/x-icon" href="logoico.png" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-        <canvas id = "canvas">
+  <canvas id="canvas" style="height: 100vh !important;">
 
-            </canvas>
-<div id = "background">
- <nav class="navbar navbar-expand-lg navbar-light" id = "navbar">
+  </canvas>
+  <div id="background" style="height: 100vh !important;">
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
 
 
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon" style = "color: white"></span>
-  </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color: white"></span>
+      </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="nav ml-auto">
-        <li class="nav-item">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav ml-auto">
+          <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
-        </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#lessons">Lessons</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contactus">Contact Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#team">Team</a>
-      </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#lessons">Lessons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactus">Contact Us</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#team">Team</a>
+          </li> -->
 
-    </ul>
+        </ul>
 
+      </div>
+
+    </nav>
+
+    <img id="brain" src="brain.png" class="hidden" width=15% style="margin: 5% 42.5% 0 42.5%">
+    <h1 id="title" class="hidden" style="margin-top: 2.5%"><strong>Monta Vista Artificial Intelligence</strong></h1>
+    <div id=arrowdown class="hidden"><i class="fas fa-arrow-down"></i></div>
   </div>
 
-</nav>
+  <h1 id="about" class="title">"The Future of Technology"</h1>
+  <div class="row no-gutters">
+    <div class="col-md-6 col-sm-12" style="">
+      <h4 id="aboutPoints">
+        <ul>
+          <li class="aboutpoint">
+            Algorithms
+          </li>
+          <li class="aboutpoint">
+            Machine Learning
+          </li>
+          <li class="aboutpoint">
+            Neural Networks
+          </li>
+          <li class="aboutpoint">
+            Applications
+          </li>
 
-  <img id = "brain" src = "brain.png" class = "hidden" width = 15% style="margin: 5% 42.5% 0 42.5%">
-  <h1 id = "title" class = "hidden" style = "margin-top: 2.5%" ><strong>Monta Vista Artificial Intelligence</strong></h1>
-  <div id = arrowdown class = "hidden"><i class="fas fa-arrow-down"></i></div>
-</div>
+        </ul>
+      </h4>
 
-<h1 id = "about" class = "title">"The Future of Technology"</h1>
-<div class = "row no-gutters">
-	<div class = "col-md-6 col-sm-12" style = "">
-					<h4 id = "aboutPoints">
-					<ul>
-						<li class = "aboutpoint">
-							Algorithms
-						</li>
-						<li class = "aboutpoint">
-							Machine Learning
-						</li>
-						<li class = "aboutpoint">
-							Neural Networks
-						</li>
-						<li class = "aboutpoint">
-						 	Applications
-						</li>
+    </div>
+    <div class="col-md-6 " style="text-align:center;">
 
-					</ul></h4>
+      <h4 id="aboutText">Our goal is to not only teach Artificial Intelligence,
+        but code everything from basic algorithms to maching learning.
+        After understanding fundamental concepts, we will enter
+        competitions and create projects to apply AI to unique situations.</h4>
+    </div>
 
-</div>
-<div class = "col-md-6 " style = "text-align:center;">
-
-        <h4 id = "aboutText">Our goal is to not only teach Artificial Intelligence,
-          but code everything from basic algorithms to maching learning.
-          After understanding fundamental concepts, we will enter
-          competitions and create projects to apply AI to unique situations.</h4>
-				</div>
-
-</div>
-<!-- <div class = "col-md-6 col-sm-12" style = "float: left;">
+  </div>
+  <!-- <div class = "col-md-6 col-sm-12" style = "float: left;">
     <iframe id = "interestslides"  src="https://docs.google.com/presentation/d/e/2PACX-1vSB9PawSesZ12eo7l_qdOdqXUcsODQB1O5nxCH5FiTgIqkcfiGxvjtd1fcGvuQXC9wr7ESyR9W8HElf/embed?start=false&loop=false&delayms=30000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div> -->
 
 
-    <h1 id = "lessons" class = "title" style = "margin-bottom: 50px;">Our Meetings</h1>
+  <h1 id="lessons" class="title" style="margin-bottom: 50px;">Our Meetings</h1>
 
-		<div id="demo" class="carousel slide" data-ride="carousel">
+  <div id="demo" class="carousel slide" data-ride="carousel">
 
-  <!-- Indicators -->
-  <ul class="carousel-indicators" style = "display: none">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
+    <!-- Indicators -->
+    <ul class="carousel-indicators" style="display: none">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
 
-  </ul>
+    </ul>
 
-  <!-- The slideshow -->
-  <div class="carousel-inner">
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon" style="width: 35px; height: 35px;"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon" style="width: 35px; height: 35px;"></span>
+    </a>
 
   </div>
 
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon" style = "width: 35px; height: 35px;"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"style = "width: 35px; height: 35px;"></span>
-  </a>
+  <div>
+    <h1 id="lessons" class="title" style="margin-bottom: 50px; margin-top: 50px;">Guest Speakers</h1>
+    <div class="row no-gutters">
+      <div class="col-md-6 col-sm-12" style="">
+        <p style="margin-left: 35%; font-weight: normal; font-size: 24px">In 2019 we had the wonderful opportunity to
+          hear from Dr. Michael Ke Zhang who has a Stanford PhD and has lots of experience in various fields of AI. We
+          look forward to inviting more guest speakers virtually this year!</p>
 
-</div>
+      </div>
+      <div class="col-md-6 " style="text-align:center;">
 
-<div style = "margin-top: 150px; width: 85%; margin-right:7.5%; margin-left:7.5%; ">
+        <img src="./aicamp.jpeg" style="width: 50%; border-radius: 50%;">
+      </div>
+
+    </div>
+  </div>
+
+  <!--<div style = "margin-top: 150px; width: 85%; margin-right:7.5%; margin-left:7.5%; ">
   <h1 id = "team" class = "title">Team</h1>
 
   <div width = "100%" height = "100%">
@@ -168,278 +192,275 @@
 
 
 
-</div>
-<div style = "margin-top: 5%">
-        <h1 id = "contactus" class = "title">Contact Us</h1>
-        <form style = "width: 70%; margin-left: 15%;margin-right: 15%;float:left;" action="https://formspree.io/mvaiclub@gmail.com"
+</div>-->
+  <div style="margin-top: 5%">
+    <h1 id="contactus" class="title">Contact Us</h1>
+    <form style="width: 70%; margin-left: 15%;margin-right: 15%;float:left;" action="https://formspree.io/mvaiclub@gmail.com"
       method="POST">
 
-            <div style = "overflow: hidden; margin: 0 0 1% 0; ">
-              <div style = "float: left; margin-left: 10.25%; width: 40%;">
-                <h5 class = "formtext" style="margin-bottom: 1%">Name:</h5>
-                <input type = "text" name = "name" id = "name">
-               </div>
+      <div style="overflow: hidden; margin: 0 0 1% 0; ">
+        <div style="float: left; margin-left: 10.25%; width: 40%;">
+          <h5 class="formtext" style="margin-bottom: 1%">Name:</h5>
+          <input type="text" name="name" id="name">
+        </div>
 
-               <div style = "float: left; width: 40%;">
-                 <h5 class = "formtext" style="margin-bottom: 1%">Email:</h5>
-                <input type = "text" name = "_replyto" id = "emailaddress" >
-              </div>
-            </div>
-                 <h5 class = "formtext" style = "margin: 0 0 1% 14.25%">Your message:</h5>
-                <textarea name = "message" id = "message"> </textarea><br>
-                <input  id = "submit" type="submit" value="Send">
-        </form>
-				<h3 id = "email" style = "text-align:center"> Email: mvaiclub@gmail.com </h3>
+        <div style="float: left; width: 40%;">
+          <h5 class="formtext" style="margin-bottom: 1%">Email:</h5>
+          <input type="text" name="_replyto" id="emailaddress">
+        </div>
+      </div>
+      <h5 class="formtext" style="margin: 0 0 1% 14.25%">Your message:</h5>
+      <textarea name="message" id="message"> </textarea><br>
+      <input id="submit" type="submit" value="Send">
+    </form>
+    <h3 id="email" style="text-align:center"> Email: mvaiclub@gmail.com </h3>
 
   </div>
 
 
 
-<footer>
-  <div style = "padding: 10px;">
+  <footer>
+    <div style="padding: 10px;">
 
-    <p style="text-align: right;"> &copy; MVAI 2020</p>
-</div>
-</footer>
+      <p style="text-align: right;"> &copy; MVAI 2020</p>
+    </div>
+  </footer>
 
- <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-   <script type="text/javascript">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
 
-	 var lessons = [
-		 {
-			 title: "Tic-Tac-Toe",
-			 date: "February 28, 2019",
-			 slides: "https://docs.google.com/presentation/d/e/2PACX-1vRoetYsw60iOYfgeRsO4vijai0qqYsoItZE7K6ElmuFaZbHdq_6pkTky89wj7l82eWvRHqhw26nATOb/embed?start=false&loop=false&delayms=60000"
-		 },
-		 {
-			 title: "Chess",
-			 date: "March 14, 2019",
-			 slides: "https://docs.google.com/presentation/d/e/2PACX-1vSPhtjVqsi82SP0huRbSZRtRL7CAOYSHcR_46-E5_4WgAodIpM0NvbkN5Q2qHeoxH696j-acK5rVLAT/embed?start=false&loop=false&delayms=60000"
-		 },
-		 {
-			 title: "Intro to Machine Learning",
-			 date: "March 21, 2019",
-			 slides: "https://docs.google.com/presentation/d/e/2PACX-1vRtsNKzWCvmOtfbXCaPrAtfmraEWvR9HIfS8jzMd_5ZQUWFK9U8cc1d_jXnsTd-Cq0Wuk3DJd7vLmKG/embed?start=false&loop=false&delayms=60000"
-		 },
-		 {
-			 title: "Ethics of AI",
-			 date: "March 28, 2019",
-			 slides: "https://docs.google.com/presentation/d/e/2PACX-1vTZuk3Yp3oscFbd4TIkWJ_A_DM0Zk3XJUhADUFJKLVdqhsnkwh3l0s0EBPSyAMJbN79bEPA1X74B_iW/embed?start=false&loop=false&delayms=60000"
-		 },
-		 {
-			 title: "Intro to TensorFlow",
-			 date: "April 11, 2019",
-			 slides: "https://docs.google.com/presentation/d/e/2PACX-1vT8SJfCBsbigSDOQJho-cLFNfeCmGt-0JxBYwOJHHB0MACSfk7fd_rWPdDps-WpNXJDTOnFKMUTMG6g/embed?start=false&loop=false&delayms=3000"
-		 },
-		 {
-			 title: "Diabetes Recognition",
-			 date: "April 25, 2019",
-			 slides: "https://docs.google.com/presentation/d/e/2PACX-1vTQhdVF_3hDtV10L6UZzoedTzVvp723131MqxCIRXTJCMLahQ4SBDntIWk9EQVoGPxFnErbUBPKQ7jN/embed?start=false&loop=false&delayms=3000"
-		 },
-		 {
-			 title: "What is AI?",
-			 date: "October 7, 2019",
-			 slides: "https://docs.google.com/presentation/d/e/2PACX-1vREIOaCJRwzs3eecBnPy-Ftw3XReLG8vWCMnACLE3NDhaAj0lMK9BIfrcEUQJ8r2phqv6EQBRhZD14W/embed?start=false&loop=false&delayms=3000"
-		 },
-		 {
-			 title: "Demystifying AI",
-			 date: "October 22, 2019",
-			 slides: "https://docs.google.com/presentation/d/e/2PACX-1vSrjYMpakkDQFoGkH4WBODYECbvwI_DCLj1w_6gsInKfbs-bEEpzCCbGVcfsjfhJMfZZKrfuBWEDjeH/embed?start=false&loop=false&delayms=3000"
-		 },
-		 {
-			 title: "Intro to Python for ML",
-			 date: "November 19, 2019",
-			 slides: "https://docs.google.com/presentation/d/e/2PACX-1vTfbfQ9inF3oNqycZ5RiG3M66n0cO89WKg18ammyWTEvrk6TKSWcnJo9jjB7TTFmaBvcFfC6CMvxNCJ/embed?start=false&loop=false&delayms=3000"
-		 },
-		 {
-			 title: "Machine Learning with Scikit Learn",
-			 date: "December 3, 2019",
-			 slides: "https://docs.google.com/presentation/d/e/2PACX-1vShnQyhGO1k2MxdhhooWUJ_SLfjZmwLy-OCsdx-quPz79AlYVS2sNXqJ3dVODbDr8ZBH1SEcA7LnQQt/embed?start=false&loop=false&delayms=3000"
-		 },
-		 {
-			 title: "Wine Recognition",
-			 date: "January 7, 2020",
-			 slides: "https://docs.google.com/presentation/d/e/2PACX-1vRFV4HjDwCClJ6g5rwGo6dNbOJyj_TnN_aG2KVEO4QCcNHLJ_NVw6P-sHYAUY64wQW7M7Qm2bi3gj1X/embed?start=false&loop=false&delayms=3000"
-		 },
-		 {
-			 title: "Image Classification",
-			 date: "January 28, 2020",
-			 slides: "https://docs.google.com/presentation/d/e/2PACX-1vScS8pp91Zb-ct0DY2vZo94QUGR2Lq8Yt3N3olzeQQF4yj2stKL8Pp2tksTnYeqY7VgZ_DMoOzd5Hxq/embed?start=false&loop=false&delayms=3000"
-		 },
-		 {
-			 title: "Neural Networks",
-			 date: "February 11, 2020",
-			 slides: "https://docs.google.com/presentation/d/e/2PACX-1vT-IXpn5k_gw-AXbOt81ydPMnahyIEVC0WVyOS2KvQ2nw3eT33XBdZCpcTl5EGB582kvzegqSiVc8ED/embed?start=false&loop=false&delayms=3000"
-		 }
-	 ];
+    var lessons = [
+      {
+        title: "Tic-Tac-Toe",
+        date: "February 28, 2019",
+        slides: "https://docs.google.com/presentation/d/e/2PACX-1vRoetYsw60iOYfgeRsO4vijai0qqYsoItZE7K6ElmuFaZbHdq_6pkTky89wj7l82eWvRHqhw26nATOb/embed?start=false&loop=false&delayms=60000"
+      },
+      {
+        title: "Chess",
+        date: "March 14, 2019",
+        slides: "https://docs.google.com/presentation/d/e/2PACX-1vSPhtjVqsi82SP0huRbSZRtRL7CAOYSHcR_46-E5_4WgAodIpM0NvbkN5Q2qHeoxH696j-acK5rVLAT/embed?start=false&loop=false&delayms=60000"
+      },
+      {
+        title: "Intro to Machine Learning",
+        date: "March 21, 2019",
+        slides: "https://docs.google.com/presentation/d/e/2PACX-1vRtsNKzWCvmOtfbXCaPrAtfmraEWvR9HIfS8jzMd_5ZQUWFK9U8cc1d_jXnsTd-Cq0Wuk3DJd7vLmKG/embed?start=false&loop=false&delayms=60000"
+      },
+      {
+        title: "Ethics of AI",
+        date: "March 28, 2019",
+        slides: "https://docs.google.com/presentation/d/e/2PACX-1vTZuk3Yp3oscFbd4TIkWJ_A_DM0Zk3XJUhADUFJKLVdqhsnkwh3l0s0EBPSyAMJbN79bEPA1X74B_iW/embed?start=false&loop=false&delayms=60000"
+      },
+      {
+        title: "Intro to TensorFlow",
+        date: "April 11, 2019",
+        slides: "https://docs.google.com/presentation/d/e/2PACX-1vT8SJfCBsbigSDOQJho-cLFNfeCmGt-0JxBYwOJHHB0MACSfk7fd_rWPdDps-WpNXJDTOnFKMUTMG6g/embed?start=false&loop=false&delayms=3000"
+      },
+      {
+        title: "Diabetes Recognition",
+        date: "April 25, 2019",
+        slides: "https://docs.google.com/presentation/d/e/2PACX-1vTQhdVF_3hDtV10L6UZzoedTzVvp723131MqxCIRXTJCMLahQ4SBDntIWk9EQVoGPxFnErbUBPKQ7jN/embed?start=false&loop=false&delayms=3000"
+      },
+      {
+        title: "What is AI?",
+        date: "October 7, 2019",
+        slides: "https://docs.google.com/presentation/d/e/2PACX-1vREIOaCJRwzs3eecBnPy-Ftw3XReLG8vWCMnACLE3NDhaAj0lMK9BIfrcEUQJ8r2phqv6EQBRhZD14W/embed?start=false&loop=false&delayms=3000"
+      },
+      {
+        title: "Demystifying AI",
+        date: "October 22, 2019",
+        slides: "https://docs.google.com/presentation/d/e/2PACX-1vSrjYMpakkDQFoGkH4WBODYECbvwI_DCLj1w_6gsInKfbs-bEEpzCCbGVcfsjfhJMfZZKrfuBWEDjeH/embed?start=false&loop=false&delayms=3000"
+      },
+      {
+        title: "Intro to Python for ML",
+        date: "November 19, 2019",
+        slides: "https://docs.google.com/presentation/d/e/2PACX-1vTfbfQ9inF3oNqycZ5RiG3M66n0cO89WKg18ammyWTEvrk6TKSWcnJo9jjB7TTFmaBvcFfC6CMvxNCJ/embed?start=false&loop=false&delayms=3000"
+      },
+      {
+        title: "Machine Learning with Scikit Learn",
+        date: "December 3, 2019",
+        slides: "https://docs.google.com/presentation/d/e/2PACX-1vShnQyhGO1k2MxdhhooWUJ_SLfjZmwLy-OCsdx-quPz79AlYVS2sNXqJ3dVODbDr8ZBH1SEcA7LnQQt/embed?start=false&loop=false&delayms=3000"
+      },
+      {
+        title: "Wine Recognition",
+        date: "January 7, 2020",
+        slides: "https://docs.google.com/presentation/d/e/2PACX-1vRFV4HjDwCClJ6g5rwGo6dNbOJyj_TnN_aG2KVEO4QCcNHLJ_NVw6P-sHYAUY64wQW7M7Qm2bi3gj1X/embed?start=false&loop=false&delayms=3000"
+      },
+      {
+        title: "Image Classification",
+        date: "January 28, 2020",
+        slides: "https://docs.google.com/presentation/d/e/2PACX-1vScS8pp91Zb-ct0DY2vZo94QUGR2Lq8Yt3N3olzeQQF4yj2stKL8Pp2tksTnYeqY7VgZ_DMoOzd5Hxq/embed?start=false&loop=false&delayms=3000"
+      },
+      {
+        title: "Neural Networks",
+        date: "February 11, 2020",
+        slides: "https://docs.google.com/presentation/d/e/2PACX-1vT-IXpn5k_gw-AXbOt81ydPMnahyIEVC0WVyOS2KvQ2nw3eT33XBdZCpcTl5EGB582kvzegqSiVc8ED/embed?start=false&loop=false&delayms=3000"
+      }
+    ];
 
-	 var inner = ``;
-	 for(var i = lessons.length-1; i >=0; i--)
-	 {
-		 inner += `
+    var inner = ``;
+    for (var i = lessons.length - 1; i >= 0; i--) {
+      inner += `
 			 <div class="carousel-item">
+          <h1 class = "lessonHeader">${lessons[i].title}</h1>
 			 		<iframe class = "presentation"  src="${lessons[i].slides}" frameborder="0" height="300" width = "40%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-			 		<h1 class = "lessonHeader">${lessons[i].title}</h1>
-					<h4 class = "lessonSubtitle">${lessons[i].date}</h4>
+			 		
 
 			 </div>
 			 `
-	 }
-	 $(".carousel-inner").html(inner);
-	$(".carousel-item").first().addClass("active");
-	if($(".carousel-item").first().hasClass("active")) $(".carousel-control-prev").css("display", "none");
-	$(".carousel-control-next").click(function() {
-		$(".carousel-control-prev").css("display", "flex");
-		if($(".carousel-item").last().hasClass("active")) {$(".carousel-control-prev").css("display", "none");}
-
-	});
-	$(".carousel-control-prev").click(function() {
-		$(".carousel-control-prev").css("display", "flex");
-		if($(".carousel-item").eq(1).hasClass("active")) {$(".carousel-control-prev").css("display", "none");}
-	});
-
-
-
-	 var canvas;
-    if($(document).width() < 1000)
-    {
-        $("#title").css("font-size", "40pt");
-        $(".title").css("font-size", "30pt");
-				$("#aboutPoints").css("display", "none");
-        $("#aboutText").css("text-align", "center");
-				$("#aboutText").css("margin-left", "10%");
-				$("#aboutText").css("width", "80%");
-				$(".nathan").css("margin-right", "0");
-				$(".rohun").css("margin-left", "0");
-				$("#submit").css("width", "50%");
-				$("#submit").css("margin-left", "25%");
-				$(".presentation").css("width", "60%");
-				$(".presentation").css("height", "200px");
-				$(".presentation").css("margin-left", "20%");
-				$(".presentation").css("margin-right", "20%");
-				$(".carousel-control-prev-icon").css("width", "15px");
-				$(".carousel-control-prev-icon").css("height", "15px");
-				$(".carousel-control-next-icon").css("width", "15px");
-				$(".carousel-control-next-icon").css("height", "15px");
-        $(".lessonHeader").css("font-size", "25pt");
     }
- var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-     $(document).ready(function() {
-			 $("#demo").carousel({
-		interval : false
-			});
-      $("#brain").fadeTo(1000,1).removeClass("hidden");
-      setTimeout( function() {  $("#title").fadeTo(1000,1).removeClass("hidden"); }, 500);
+    $(".carousel-inner").html(inner);
+    $(".carousel-item").first().addClass("active");
+    if ($(".carousel-item").first().hasClass("active")) $(".carousel-control-prev").css("display", "none");
+    $(".carousel-control-next").click(function () {
+      $(".carousel-control-prev").css("display", "flex");
+      if ($(".carousel-item").last().hasClass("active")) { $(".carousel-control-prev").css("display", "none"); }
 
-          setTimeout( function() {  $("#arrowdown").fadeTo(1000,1).removeClass("hidden"); }, 1000);
-
-
-    if($(document).width() > 1000 && !is_safari)
-    {
-      canvas = document.getElementById("canvas"),
-      ctx = canvas.getContext('2d');
-
-    }
-    if(is_safari)
-    {
-      $(".navbar").css("background", "rgb(0, 139, 242)");
-    }
-
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-var stars = [], // Array that contains the stars
-    FPS = 60, // Frames per second
-    x = 50, // Number of stars
-    mouse = {
-      x: 0,
-      y: 0
-    };  // mouse location
-// Push stars to array
-for (var i = 0; i < x; i++) {
-  stars.push({
-    x: Math.random() * canvas.width,
-    y: Math.random() * canvas.height,
-    radius: Math.random() * 3 + 1,
-    vx: Math.floor(Math.random() * 75) - 25,
-    vy: Math.floor(Math.random() * 75) - 25
-  });
-}
-// Draw the scene
-function draw() {
-  ctx.clearRect(0,0,canvas.width,canvas.height);
-
-  ctx.globalCompositeOperation = "lighter";
-
-  for (var i = 0, x = stars.length; i < x; i++) {
-    var s = stars[i];
-
-    ctx.fillStyle = "#fff";
-    ctx.beginPath();
-    ctx.arc(s.x, s.y, s.radius, 0, 2 * Math.PI);
-    ctx.fill();
-    ctx.fillStyle = 'black';
-    ctx.stroke();
-  }
-
-  ctx.beginPath();
-  for (var i = 0, x = stars.length; i < x; i++) {
-    var starI = stars[i];
-    ctx.moveTo(starI.x,starI.y);
-    if(distance(mouse, starI) < 150) ctx.lineTo(mouse.x, mouse.y);
-    for (var j = 0, x = stars.length; j < x; j++) {
-      var starII = stars[j];
-      if(distance(starI, starII) < 150) {
-        //ctx.globalAlpha = (1 / 150 * distance(starI, starII).toFixed(1));
-        ctx.lineTo(starII.x,starII.y);
-      }
-    }
-  }
-  ctx.lineWidth = 0.05;
-  ctx.strokeStyle = 'white';
-  ctx.stroke();
-}
-function distance( point1, point2 ){
-  var xs = 0;
-  var ys = 0;
-
-  xs = point2.x - point1.x;
-  xs = xs * xs;
-
-  ys = point2.y - point1.y;
-  ys = ys * ys;
-
-  return Math.sqrt( xs + ys );
-}
-// Update star locations
-function update() {
-  for (var i = 0, x = stars.length; i < x; i++) {
-    var s = stars[i];
-
-    s.x += s.vx / FPS;
-    s.y += s.vy / FPS;
-
-    if (s.x < 0 || s.x > canvas.width) s.vx = -s.vx;
-    if (s.y < 0 || s.y > canvas.height) s.vy = -s.vy;
-  }
-}
-canvas.addEventListener('mousemove', function(e){
-  mouse.x = e.clientX;
-  mouse.y = e.clientY;
-});
-// Update and draw
-function tick() {
-  draw();
-  update();
-  requestAnimationFrame(tick);
-}
-tick();
     });
-   </script>
+    $(".carousel-control-prev").click(function () {
+      $(".carousel-control-prev").css("display", "flex");
+      if ($(".carousel-item").eq(1).hasClass("active")) { $(".carousel-control-prev").css("display", "none"); }
+    });
+
+
+
+    var canvas;
+    if ($(document).width() < 1000) {
+      $("#title").css("font-size", "40pt");
+      $(".title").css("font-size", "30pt");
+      $("#aboutPoints").css("display", "none");
+      $("#aboutText").css("text-align", "center");
+      $("#aboutText").css("margin-left", "10%");
+      $("#aboutText").css("width", "80%");
+      $(".nathan").css("margin-right", "0");
+      $(".rohun").css("margin-left", "0");
+      $("#submit").css("width", "50%");
+      $("#submit").css("margin-left", "25%");
+      $(".presentation").css("width", "60%");
+      $(".presentation").css("height", "200px");
+      $(".presentation").css("margin-left", "20%");
+      $(".presentation").css("margin-right", "20%");
+      $(".carousel-control-prev-icon").css("width", "15px");
+      $(".carousel-control-prev-icon").css("height", "15px");
+      $(".carousel-control-next-icon").css("width", "15px");
+      $(".carousel-control-next-icon").css("height", "15px");
+      $(".lessonHeader").css("font-size", "25pt");
+    }
+    var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    $(document).ready(function () {
+      $("#demo").carousel({
+        interval: false
+      });
+      $("#brain").fadeTo(1000, 1).removeClass("hidden");
+      setTimeout(function () { $("#title").fadeTo(1000, 1).removeClass("hidden"); }, 500);
+
+      setTimeout(function () { $("#arrowdown").fadeTo(1000, 1).removeClass("hidden"); }, 1000);
+
+
+      if ($(document).width() > 1000 && !is_safari) {
+        canvas = document.getElementById("canvas"),
+          ctx = canvas.getContext('2d');
+
+      }
+      if (is_safari) {
+        $(".navbar").css("background", "rgb(0, 139, 242)");
+      }
+
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      var stars = [], // Array that contains the stars
+        FPS = 60, // Frames per second
+        x = 50, // Number of stars
+        mouse = {
+          x: 0,
+          y: 0
+        };  // mouse location
+      // Push stars to array
+      for (var i = 0; i < x; i++) {
+        stars.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          radius: Math.random() * 3 + 1,
+          vx: Math.floor(Math.random() * 75) - 25,
+          vy: Math.floor(Math.random() * 75) - 25
+        });
+      }
+      // Draw the scene
+      function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        ctx.globalCompositeOperation = "lighter";
+
+        for (var i = 0, x = stars.length; i < x; i++) {
+          var s = stars[i];
+
+          ctx.fillStyle = "#fff";
+          ctx.beginPath();
+          ctx.arc(s.x, s.y, s.radius, 0, 2 * Math.PI);
+          ctx.fill();
+          ctx.fillStyle = 'black';
+          ctx.stroke();
+        }
+
+        ctx.beginPath();
+        for (var i = 0, x = stars.length; i < x; i++) {
+          var starI = stars[i];
+          ctx.moveTo(starI.x, starI.y);
+          if (distance(mouse, starI) < 150) ctx.lineTo(mouse.x, mouse.y);
+          for (var j = 0, x = stars.length; j < x; j++) {
+            var starII = stars[j];
+            if (distance(starI, starII) < 150) {
+              //ctx.globalAlpha = (1 / 150 * distance(starI, starII).toFixed(1));
+              ctx.lineTo(starII.x, starII.y);
+            }
+          }
+        }
+        ctx.lineWidth = 0.05;
+        ctx.strokeStyle = 'white';
+        ctx.stroke();
+      }
+      function distance(point1, point2) {
+        var xs = 0;
+        var ys = 0;
+
+        xs = point2.x - point1.x;
+        xs = xs * xs;
+
+        ys = point2.y - point1.y;
+        ys = ys * ys;
+
+        return Math.sqrt(xs + ys);
+      }
+      // Update star locations
+      function update() {
+        for (var i = 0, x = stars.length; i < x; i++) {
+          var s = stars[i];
+
+          s.x += s.vx / FPS;
+          s.y += s.vy / FPS;
+
+          if (s.x < 0 || s.x > canvas.width) s.vx = -s.vx;
+          if (s.y < 0 || s.y > canvas.height) s.vy = -s.vy;
+        }
+      }
+      canvas.addEventListener('mousemove', function (e) {
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
+      });
+      // Update and draw
+      function tick() {
+        draw();
+        update();
+        requestAnimationFrame(tick);
+      }
+      tick();
+    });
+  </script>
 
 </body>
+
 </html>
